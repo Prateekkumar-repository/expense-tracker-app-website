@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker</title>
+</head>
+<body>
+    <script src="./index.js"></script>
+    <div class="index-detail" style=" height: 100px; display:flex; margin: auto; border:2px black;" >
+        <h3 style="color: rgb(22, 1, 1); background-color:rgba(157, 250, 136, 0.832); border-radius: 20px; margin:auto; padding-left: 20px;padding-top: 10px;display: flexbox;
+        padding-right: 20px;padding-bottom: 10px;">Expence tracker</h3>
+    </div>
+
+    <div class="form" style="font-weight:bold; color:rgb(22, 1, 1);" >
+        <form  onsubmit="saveToLocalStorage(event)"
+         action="" style="background-color:rgba(157, 250, 136, 0.832); border-radius:5px; margin: auto; border: 10px ; padding-left: 10px;padding-top: 10px;
+        padding-right: 10px;padding-bottom: 10px; display: flexbox;
+            width: 13%;">
+                <label for="">Expense amount</label><br>
+               <input type="number" name="amount" placeholder="Enter amount" style="" required> <br>
+               <br>
+               <label for="">Description</label><br>
+               <input type="text" name="Description" placeholder="" style="" required> <br>
+               <br>
+                <label for="">Choose Category</label>
+                    <select name="category">
+                        <option value="">Select category</option>
+                        <option value=""name="category">Health</option>
+                        <option value=""name="category">Travel</option>
+                        <option value=""name="category">Education</option>
+                        <option value=""name="category">Family</option>
+                    </select>
+                    <br>
+                    <br>
+
+
+                 <button id="btn" style="background-color: rgb(247, 80, 80); padding:20px; margin-left: 20px; border-radius: 5px; color:white; font-size: 15px; font-weight: bold; " >Add expense</button>
+        </form>
+        <div class="index-detail" style=" height: 100px; display:flex; margin: auto; border:2px black;" >
+            <h3 style="color: black; background-color:rgba(157, 250, 136, 0.832); border-radius: 20px; margin:auto; padding-left: 20px;padding-top: 10px;display: flexbox;
+            padding-right: 20px;padding-bottom: 10px;"> Your expenses list 
+            
+        <ol id="userExpenses" ></ol>
+        <ol id="userExpenses1" ></ol>
+        
+             </h3>
+    </div>
+    </div>
+    <br>
+
+  
+</body>
+</html>
